@@ -109,13 +109,18 @@ function App() {
               <Grid
                 item
                 container
-                flexDirection="column"
+                flexDirection={{ xs: "column", md: "row" }}
+                flexWrap="nowrap"
                 alignItems={{ xs: "center", md: "inherit" }}
                 justifyContent={{ md: "space-around" }}
               >
                 <Grid item>
                   <Button
-                    sx={{ borderRadius: "20px", padding: "10px" }}
+                    sx={{
+                      width: "max-content",
+                      borderRadius: "20px",
+                      padding: "10px",
+                    }}
                     endIcon={<ArrowForwardIosIcon />}
                     variant="contained"
                   >
